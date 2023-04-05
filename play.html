@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <head>
+        <title>clicker</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8"> 
+        <meta name="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello World</title>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="full-screen" content="yes"/>
+        <meta charset="utf-8"> 
+        <meta name="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+    </head>
+
+    <body>
+        <!--footer-->
+        <div id="navigate"> 
+            <div id="menu">
+                <a id="menutext1" class="active" href="play.html">Game</a>
+                <a> |   </a>
+                <a id="menutext" href="aboutme.html">About Me</a>
+            </div>
+        </div>
+
+        <div id="game">
+            <div id="coinstats">
+            <img id="coinlogo" src="asset/coin.png">
+            <span id="clicks">0</div>
+            </div>
+
+            <div id="divged">
+            <button id="gedungs">
+                <div id="gedunglt5" style="display:none;"></div>
+                <div id="gedunglt4" style="display:none;"></div>
+                <div id="gedunglt3" style="display:none;"></div>
+                <div id="gedunglt2" style="display:none;"></div>
+                <div id="gedunglt1">lobbyLv1</div>
+            </button>
+            </div>
+
+            <div id="tamu" style="display:none;">tamu1</div>
+
+            <div id="shop" style="display:none;">
+                <div id="closeshop">X</div>
+                <h2>shop</h2>
+                <div id="keterangan"></div>
+                <div class="row" id="isishop">
+                    <div class="col-sm-12 col-md-4" id="upgrades">
+                        <div id="upgradescontent">
+                            <div id="upgradegedung">gedunglv2</div> <!--upgrade1.jpg + 1-->
+                            <div>Level Gedung : <span id="upgrade">1</span></div>
+                            <div>Renovasi Gedung</div>
+                            <button id="upgradeButton">45 $</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4" id="autoclicker">
+                        <div id="autoclickercontent">
+                            <div id="upgradetamu">tamu1</div>
+                            <div>pengunjung/detik : <span id="autoClicker">0</span></div>
+                            <div>Tambah pengunjung</div>
+                            <button id="autoClickerButton">150 $</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4" id="multiplyy">
+                        <div id="multiplycontent">
+                            <img src="tambahlantai.jpg">
+                            <div>Jumlah Lantai : <span id="multiplier">1</span></div>
+                            <div>Tambah Lantai</div>
+                            <button id="multiplyButton">200 $</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="showshop">buka shop</button>
+
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
