@@ -1,11 +1,7 @@
 <!DOCTYPE html>
     <head>
-        <title>clicker</title>
+        <title>UMN Pixel</title>
         <link rel="stylesheet" href="style.css">
-        <meta charset="utf-8"> 
-        <meta name="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hello World</title>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta name="full-screen" content="yes"/>
         <meta charset="utf-8"> 
@@ -41,14 +37,14 @@
                 <div id="gedunglt4" style="display:none;"></div>
                 <div id="gedunglt3" style="display:none;"></div>
                 <div id="gedunglt2" style="display:none;"></div>
-                <div id="gedunglt1">lobbyLv1</div>
+                <div id="gedunglt1"><img src="asset/coin.png" style="width:50px;"></div>
             </button>
             </div>
 
             <div id="tamu" style="display:none;">tamu1</div>
 
             <div id="shop" style="display:none;">
-                <div id="closeshop">X</div>
+                <button id="closeshop" style="position: absolute; top: 5px; right: 5px;"><img src="asset/close.png" style="width:20px; margin: 5px;"></button>
                 <h2>shop</h2>
                 <div id="keterangan"></div>
                 <div class="row" id="isishop">
@@ -57,7 +53,7 @@
                             <div id="upgradegedung">gedunglv2</div> <!--upgrade1.jpg + 1-->
                             <div>Level Gedung : <span id="upgrade">1</span></div>
                             <div>Renovasi Gedung</div>
-                            <button id="upgradeButton">45 $</button>
+                            <button id="upgradeButton" style="position: relative; bottom: -50px;">45 $</button>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4" id="autoclicker">
@@ -65,21 +61,21 @@
                             <div id="upgradetamu">tamu1</div>
                             <div>pengunjung/detik : <span id="autoClicker">0</span></div>
                             <div>Tambah pengunjung</div>
-                            <button id="autoClickerButton">150 $</button>
+                            <button id="autoClickerButton" style="position: relative; bottom: -26px;">150 $</button>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4" id="multiplyy">
                         <div id="multiplycontent">
-                            <img src="tambahlantai.jpg">
+                            <img src="asset/coin.png" style="width:20px;">
                             <div>Jumlah Lantai : <span id="multiplier">1</span></div>
                             <div>Tambah Lantai</div>
-                            <button id="multiplyButton">200 $</button>
+                            <button id="multiplyButton" style="position: relative; bottom: -52px;">200 $</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button id="showshop">buka shop</button>
+            <button id="showshop"><img src="asset/shopbutton.png" style="height: 40px;"></button>
 
         </div>
 

@@ -1,3 +1,7 @@
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
+});
+
 // inisialisasi variabel
 let clicks = 0;
 let multiplier = 1;
@@ -156,11 +160,12 @@ function upgradeHandler() {
       }
       if (upgrade == 2){
         document.getElementById("upgradegedung").innerHTML = "gedunglv3";
-        document.getElementById("gedunglt1").innerHTML = "lobbylv2";
-        document.getElementById("gedunglt2").innerHTML = "gedunglv2";
+        document.getElementById("gedunglt1").innerHTML = "<img src='asset/coin.png' style='width:50px;'>"; //lobbylv2
+        document.getElementById("gedunglt2").innerHTML = "<img src='asset/coin.png' style='width:50px;'>"; //gedlv2
         document.getElementById("gedunglt3").innerHTML = "gedunglv2";
         document.getElementById("gedunglt4").innerHTML = "gedunglv2";
-        document.getElementById("gedunglt5").innerHTML = "rooftoplv2";
+        document.getElementById("gedunglt5").innerHTML = "gedunglv2";
+        document.getElementById("rooftop").innerHTML = "rooftoplv2";
       } 
       if (upgrade == 3){
         document.getElementById("upgradegedung").innerHTML = "gedunglv4";
@@ -168,7 +173,8 @@ function upgradeHandler() {
         document.getElementById("gedunglt2").innerHTML = "gedunglv3";
         document.getElementById("gedunglt3").innerHTML = "gedunglv3";
         document.getElementById("gedunglt4").innerHTML = "gedunglv3";
-        document.getElementById("gedunglt5").innerHTML = "rooftoplv3";
+        document.getElementById("gedunglt5").innerHTML = "gedunglv3";
+        document.getElementById("rooftop").innerHTML = "rooftoplv3";
       } 
       if (upgrade == 4){
         document.getElementById("upgradegedung").innerHTML = "gedunglv5";
@@ -176,14 +182,16 @@ function upgradeHandler() {
         document.getElementById("gedunglt2").innerHTML = "gedunglv4";
         document.getElementById("gedunglt3").innerHTML = "gedunglv4";
         document.getElementById("gedunglt4").innerHTML = "gedunglv4";
-        document.getElementById("gedunglt5").innerHTML = "rooftoplv4";
+        document.getElementById("gedunglt5").innerHTML = "gedunglv4";
+        document.getElementById("rooftop").innerHTML = "rooftoplv4";
       }
       if (upgrade == 5){
         document.getElementById("gedunglt1").innerHTML = "lobbylv5";
         document.getElementById("gedunglt2").innerHTML = "gedunglv5";
         document.getElementById("gedunglt3").innerHTML = "gedunglv5";
         document.getElementById("gedunglt4").innerHTML = "gedunglv5";
-        document.getElementById("gedunglt5").innerHTML = "rooftoplv5";
+        document.getElementById("gedunglt5").innerHTML = "gedunglv5";
+        document.getElementById("rooftop").innerHTML = "rooftoplv5";
       }
       // meng-update nilai di dalam elemen keterangan
       updateKeterangan();

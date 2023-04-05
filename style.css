@@ -16,6 +16,21 @@ body {
     src: url("asset/minecraftpx.ttf");
 }
 
+@media only screen and (max-width: 767px) {
+    #shop {
+        max-height: 600px;
+        width: 80%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #upgradescontent,
+    #autoclickercontent,
+    #multiplycontent {
+        margin-bottom: 10px;
+  }
+}
+
 a {
     color: #2f2f2f;
     font-size: 15px;
@@ -40,6 +55,7 @@ a {
     width: 2.5em;
     font-size: 1.5em;
     padding-right: 15px;
+    padding-top: 10px;
 }
 
 a:link {
@@ -65,6 +81,7 @@ a:link {
     border-bottom: 2px solid black;
     border-top: 2px solid black;
     text-align: center;
+    height: fit-content;
 }
 
 #coinstats {
@@ -91,4 +108,81 @@ a:link {
     left: 50%;
     top: 90%;
     transform: translate(-50%, -50%);
+}
+
+#gedungs {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    width:50px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    /* Add any other custom styles you want here */
+  }
+
+#shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f7ffcc5c;
+    border-radius: 20px;
+  }
+
+#isishop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  #isishop > .col-sm-12 {
+    text-align: center;
+  }
+
+#upgradescontent {
+    border: 3px dotted black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    position: relative;
+}
+
+#autoclickercontent {
+    border: 3px dotted black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    position: relative;
+}
+
+#multiplycontent {
+    border: 3px dotted black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    position: relative;
 }
