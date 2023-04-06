@@ -138,20 +138,20 @@ function autoClickerHandler() {
       document.getElementById("tamu").style.display = "block";
     }
     if (autoClicker == 2){
-      document.getElementById("upgradetamu").innerHTML = "tamu3";
+      document.getElementById("upgradetamu").innerHTML = "<img src='asset/3p.gif' style='width: 50px;'>";
       document.getElementById("tamu").innerHTML = "<img src='asset/2p.gif' style='width: 50px;'>";
       document.getElementById("tamu").style.display = "block";
     } 
     if (autoClicker == 3){
-      document.getElementById("upgradetamu").innerHTML = "tamu4";
+      document.getElementById("upgradetamu").innerHTML = "<img src='asset/4p.gif' style='width: 50px;'>";
       document.getElementById("tamu").innerHTML = "<img src='asset/3p.gif' style='width: 50px;'>";
     } 
     if (autoClicker == 4){
-      document.getElementById("upgradetamu").innerHTML = "tamu5";
+      document.getElementById("upgradetamu").innerHTML = "<img src='asset/5p.gif' style='width: 50px;'>";
       document.getElementById("tamu").innerHTML = "<img src='asset/4p.gif' style='width: 50px;'>";
     }
     if (autoClicker == 5){
-      document.getElementById("upgradetamu").innerHTML = "MAX";
+      document.getElementById("upgradetamu").innerHTML = "<img src='asset/3p.gif' style='width: 50px;'>";
       document.getElementById("tamu").innerHTML = "<img src='asset/5p.gif' style='width: 50px;'>";
     }
   } else {
