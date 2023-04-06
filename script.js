@@ -187,7 +187,7 @@ function upgradeHandler() {
         document.getElementById("rooftop").innerHTML = "<img src='asset/lv4r.png' style='width:150px;'>";
       }
       if (upgrade == 5){
-        document.getElementById("upgradegedung").innerHTML = "MAX";
+        document.getElementById("upgradegedung").innerHTML = "<img src='asset/lv5lt1.png' style='width:100px; margin-bottom: 10px;'>";
         document.getElementById("gedunglt1").innerHTML = "<img src='asset/lv5lt1.png' style='width:150px;'>";
         document.getElementById("gedunglt2").innerHTML = "<img src='asset/lv5lt2.png' style='width:150px;'>";
         document.getElementById("gedunglt3").innerHTML = "<img src='asset/lv5lt2.png' style='width:150px;'>";
