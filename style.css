@@ -122,10 +122,31 @@ a:link {
 #gedungs {
     position: absolute;
     left: 50%;
-    top: 80%;
-    transform: translate(-50%, -50%);
-    width:50px;
+    bottom: 20%;
+    transform: translate(-50%);
+    width:150px;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
 }
+
+#divged {
+    font-size: 0;
+}
+
+#tamu {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-30%);
+    z-index: 5;
+}
+
+#divged div {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+  }
 
 button {
     background-color: transparent;
@@ -146,6 +167,7 @@ button {
     transform: translate(-50%, -50%);
     background-color: #f7ffcc5c;
     border-radius: 20px;
+    z-index: 6;
   }
 
 #isishop {

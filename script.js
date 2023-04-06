@@ -85,7 +85,7 @@ function multiplyHandler() {
     multiplier += 1;
     multiplierSpan.textContent = multiplier;
     if(multiplier == 5){
-      document.getElementById("multiplycontent").style.display = "none";
+      document.getElementById("multiplyButton").style.display = "none";
     }
     multiplyButton.textContent = `${40 * 5 * multiplier} $`;
     if (multiplier == 2){
@@ -122,25 +122,27 @@ function autoClickerHandler() {
       }, 1000);
     }
     if(autoClicker == 5){
-      document.getElementById("autoclickercontent").style.display = "none";
+      document.getElementById("autoClickerButton").style.display = "none";
     }
     if(autoClicker > 0){
       document.getElementById("tamu").style.display = "block";
     }
     if (autoClicker == 2){
       document.getElementById("upgradetamu").innerHTML = "tamu3";
-      document.getElementById("tamu").innerHTML = "tamu2";
+      document.getElementById("tamu").innerHTML = "<img src='asset/2p.gif' style='width: 50px;'>";
+      document.getElementById("tamu").style.display = "block";
     } 
     if (autoClicker == 3){
       document.getElementById("upgradetamu").innerHTML = "tamu4";
-      document.getElementById("tamu").innerHTML = "tamu3";
+      document.getElementById("tamu").innerHTML = "<img src='asset/3p.gif' style='width: 50px;'>";
     } 
     if (autoClicker == 4){
       document.getElementById("upgradetamu").innerHTML = "tamu5";
-      document.getElementById("tamu").innerHTML = "tamu4";
+      document.getElementById("tamu").innerHTML = "<img src='asset/4p.gif' style='width: 50px;'>";
     }
     if (autoClicker == 5){
-      document.getElementById("tamu").innerHTML = "tamu5";
+      document.getElementById("upgradetamu").innerHTML = "MAX";
+      document.getElementById("tamu").innerHTML = "<img src='asset/5p.gif' style='width: 50px;'>";
     }
   } else {
     alert("Uang tidak cukup!");
@@ -156,42 +158,43 @@ function upgradeHandler() {
       upgradeSpan.textContent = upgrade;
       upgradeButton.textContent = `${15 * 3 * upgrade} $`;
       if(upgrade == 5){
-        document.getElementById("upgradescontent").style.display = "none";
+        document.getElementById("upgradeButton").style.display = "none";
       }
       if (upgrade == 2){
-        document.getElementById("upgradegedung").innerHTML = "gedunglv3";
-        document.getElementById("gedunglt1").innerHTML = "<img src='asset/coin.png' style='width:50px;'>"; //lobbylv2
-        document.getElementById("gedunglt2").innerHTML = "<img src='asset/coin.png' style='width:50px;'>"; //gedlv2
-        document.getElementById("gedunglt3").innerHTML = "gedunglv2";
-        document.getElementById("gedunglt4").innerHTML = "gedunglv2";
-        document.getElementById("gedunglt5").innerHTML = "gedunglv2";
-        document.getElementById("rooftop").innerHTML = "rooftoplv2";
+        document.getElementById("upgradegedung").innerHTML = "Gedung Lv 3";
+        document.getElementById("gedunglt1").innerHTML = "<img src='asset/lv2lt1.png' style='width:150px;'>"; //lobbylv2
+        document.getElementById("gedunglt2").innerHTML = "<img src='asset/lv2lt2.png' style='width:150px;'>"; //gedlv2
+        document.getElementById("gedunglt3").innerHTML = "<img src='asset/lv2lt2.png' style='width:150px;'>";
+        document.getElementById("gedunglt4").innerHTML = "<img src='asset/lv2lt2.png' style='width:150px;'>";
+        document.getElementById("gedunglt5").innerHTML = "<img src='asset/lv2lt2.png' style='width:150px;'>";
+        document.getElementById("rooftop").innerHTML = "<img src='asset/lv2r.png' style='width:150px;'>";
       } 
       if (upgrade == 3){
-        document.getElementById("upgradegedung").innerHTML = "gedunglv4";
-        document.getElementById("gedunglt1").innerHTML = "lobbylv3";
-        document.getElementById("gedunglt2").innerHTML = "gedunglv3";
-        document.getElementById("gedunglt3").innerHTML = "gedunglv3";
-        document.getElementById("gedunglt4").innerHTML = "gedunglv3";
-        document.getElementById("gedunglt5").innerHTML = "gedunglv3";
-        document.getElementById("rooftop").innerHTML = "rooftoplv3";
+        document.getElementById("upgradegedung").innerHTML = "Gedung Lv 4";
+        document.getElementById("gedunglt1").innerHTML = "<img src='asset/lv3lt1.png' style='width:150px;'>";
+        document.getElementById("gedunglt2").innerHTML = "<img src='asset/lv3lt2.png' style='width:150px;'>";
+        document.getElementById("gedunglt3").innerHTML = "<img src='asset/lv3lt2.png' style='width:150px;'>";
+        document.getElementById("gedunglt4").innerHTML = "<img src='asset/lv3lt2.png' style='width:150px;'>";
+        document.getElementById("gedunglt5").innerHTML = "<img src='asset/lv3lt2.png' style='width:150px;'>";
+        document.getElementById("rooftop").innerHTML = "<img src='asset/lv3r.png' style='width:150px;'>";
       } 
       if (upgrade == 4){
-        document.getElementById("upgradegedung").innerHTML = "gedunglv5";
-        document.getElementById("gedunglt1").innerHTML = "lobbylv4";
-        document.getElementById("gedunglt2").innerHTML = "gedunglv4";
-        document.getElementById("gedunglt3").innerHTML = "gedunglv4";
-        document.getElementById("gedunglt4").innerHTML = "gedunglv4";
-        document.getElementById("gedunglt5").innerHTML = "gedunglv4";
-        document.getElementById("rooftop").innerHTML = "rooftoplv4";
+        document.getElementById("upgradegedung").innerHTML = "Gedung Lv 5";
+        document.getElementById("gedunglt1").innerHTML = "<img src='asset/lv4lt1.png' style='width:150px;'>";
+        document.getElementById("gedunglt2").innerHTML = "<img src='asset/lv4lt2.png' style='width:150px;'>";
+        document.getElementById("gedunglt3").innerHTML = "<img src='asset/lv4lt2.png' style='width:150px;'>";
+        document.getElementById("gedunglt4").innerHTML = "<img src='asset/lv4lt2.png' style='width:150px;'>";
+        document.getElementById("gedunglt5").innerHTML = "<img src='asset/lv4lt2.png' style='width:150px;'>";
+        document.getElementById("rooftop").innerHTML = "<img src='asset/lv4r.png' style='width:150px;'>";
       }
       if (upgrade == 5){
-        document.getElementById("gedunglt1").innerHTML = "lobbylv5";
-        document.getElementById("gedunglt2").innerHTML = "gedunglv5";
-        document.getElementById("gedunglt3").innerHTML = "gedunglv5";
-        document.getElementById("gedunglt4").innerHTML = "gedunglv5";
-        document.getElementById("gedunglt5").innerHTML = "gedunglv5";
-        document.getElementById("rooftop").innerHTML = "rooftoplv5";
+        document.getElementById("upgradegedung").innerHTML = "MAX";
+        document.getElementById("gedunglt1").innerHTML = "<img src='asset/lv5lt1.png' style='width:150px;'>";
+        document.getElementById("gedunglt2").innerHTML = "<img src='asset/lv5lt2.png' style='width:150px;'>";
+        document.getElementById("gedunglt3").innerHTML = "<img src='asset/lv5lt2.png' style='width:150px;'>";
+        document.getElementById("gedunglt4").innerHTML = "<img src='asset/lv5lt2.png' style='width:150px;'>";
+        document.getElementById("gedunglt5").innerHTML = "<img src='asset/lv5lt2.png' style='width:150px;'>";
+        document.getElementById("rooftop").innerHTML = "<img src='asset/lv5r.png' style='width:150px;'>";
       }
       // meng-update nilai di dalam elemen keterangan
       updateKeterangan();
