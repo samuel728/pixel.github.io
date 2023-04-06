@@ -11,6 +11,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+             html, body {
+                touch-action: none;
+                -ms-touch-action: none;
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                overflow: hidden;
+                }
+        </style>
         
     </head>
 
@@ -20,7 +31,7 @@
             <div id="menu">
                 <a id="menutext1" class="active" href="play.html">Game</a>
                 <a> |   </a>
-                <a id="menutext" href="aboutme.html">About Me</a>
+                <a id="menutext" href="aboutme.html">About</a>
             </div>
         </div>
 
@@ -44,32 +55,32 @@
             <div id="tamu" style="display:none;"><img src="asset/1p.gif" style="width: 50px;"></div>
 
             <div id="shop" style="display:none;">
-                <button id="closeshop" style="position: absolute; top: 5px; right: 5px;"><img src="asset/close.png" style="width:20px; margin: 5px;"></button>
+                <button id="closeshop" style="position: absolute; top: 5px; right: 5px;"><img src="asset/close.png" style="width:25px; margin: 10px;"></button>
                 <h2><img src="asset/shopbutton.png" style="height: 40px; margin-top: 10px;"></h2>
                 <div id="keterangan"></div>
                 <div class="row" id="isishop">
                     <div class="col-sm-12 col-md-4" id="upgrades">
                         <div id="upgradescontent">
-                            <div id="upgradegedung"> Gedung Lv 2</div> <!--upgrade1.jpg + 1-->
-                            <div>Level Gedung : <span id="upgrade">1</span></div>
-                            <div>Renovasi Gedung</div>
-                            <button id="upgradeButton" style="position: relative; bottom: -50px;">45 <img src="asset/coin.png" style="height: 10px;"></button>
+                            <div id="upgradegedung"><img src='asset/lv2lt1.png' style='width:100px; margin-bottom: 10px;'></div> <!--upgrade1.jpg + 1-->
+                            <div id="curr">Level Gedung : <span id="upgrade">1</span></div>
+                            <div class="info">&#128712 Renovasi Gedung</div>
+                            <button id="upgradeButton">45 <img src="asset/coin.png" style="height: 10px;"></button>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4" id="autoclicker">
                         <div id="autoclickercontent">
-                            <div id="upgradetamu">tamu1</div>
-                            <div>pengunjung/detik : <span id="autoClicker">0</span></div>
-                            <div>Tambah pengunjung</div>
-                            <button id="autoClickerButton" style="position: relative; bottom: -26px;">150 <img src="asset/coin.png" style="height: 10px;"</button>
+                            <div id="upgradetamu"><img src='asset/1p.gif' style='width: 50px;'></div>
+                            <div id="curr" style="margin-top: 10px; width: 80%;">Pengunjung per Detik : <span id="autoClicker">0</span></div>
+                            <div class="info">&#128712 Tambah pengunjung</div>
+                            <button id="autoClickerButton">150 <img src="asset/coin.png" style="height: 10px;"></button>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4" id="multiplyy">
                         <div id="multiplycontent">
-                            <img src="asset/coin.png" style="width:20px;">
-                            <div>Jumlah Lantai : <span id="multiplier">1</span></div>
-                            <div>Tambah Lantai</div>
-                            <button id="multiplyButton" style="position: relative; bottom: -52px;">200 <img src="asset/coin.png" style="height: 10px;"</button>
+                            <img src="asset/upgrade.png" style="width:120px; margin-bottom: 10px;">
+                            <div id="curr">Jumlah Lantai : <span id="multiplier">1</span></div>
+                            <div class="info">&#128712 Tambah Lantai</div>
+                            <button id="multiplyButton">200 <img src="asset/coin.png" style="height: 10px;"></button>
                         </div>
                     </div>
                 </div>

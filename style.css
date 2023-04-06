@@ -8,17 +8,7 @@ body {
     min-width: 100%;
     font-family: "CustomFonts", sans-serif;
     text-align: center;
-    overflow: hidden;
  }
-
- html, body {
-    touch-action: none;
-    -ms-touch-action: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-  }
 
  @font-face {
     font-family: "CustomFonts";
@@ -27,7 +17,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     #shop {
-        height: 50%;
+        height: 70%;
         width: 80%;
         overflow-y: scroll;
         overflow-x: hidden;
@@ -35,10 +25,12 @@ body {
 
     #upgradescontent,
     #autoclickercontent,
-    #multiplycontent {
+    #multiplycontent, #conp {
         margin-bottom: 10px;
-  }
+    }
 }
+
+
 
 a {
     color: #2f2f2f;
@@ -64,6 +56,20 @@ a {
     width: 2.5em;
     font-size: 1.5em;
     padding-right: 15px;
+    padding-top: 10px;
+}
+
+#menutext2 {
+    width: 2.5em;
+    padding-right: 15px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+#menutext3 {
+    width: 2.5em;
+    font-size: 1.5em;
+    padding-left: 15px;
     padding-top: 10px;
 }
 
@@ -98,6 +104,7 @@ a:link {
     align-items: center;
     height: 80px;
     display: flex;
+    z-index: 10;
 }
 
 #clicks {
@@ -154,6 +161,7 @@ button {
     padding: 0;
     margin: 0;
     cursor: pointer;
+    user-select: none;
     /* Add any other custom styles you want here */
   }
 
@@ -165,9 +173,10 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f7ffcc5c;
+    background-color: #f7ffcca3;
     border-radius: 20px;
     z-index: 6;
+    border: 3px solid black;
   }
 
 #isishop {
@@ -183,7 +192,7 @@ button {
   }
 
 #upgradescontent {
-    border: 3px dotted black;
+    border: 3px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,7 +204,7 @@ button {
 }
 
 #autoclickercontent {
-    border: 3px dotted black;
+    border: 3px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,7 +216,7 @@ button {
 }
 
 #multiplycontent {
-    border: 3px dotted black;
+    border: 3px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,3 +226,103 @@ button {
     border-radius: 20px;
     position: relative;
 }
+
+.info {
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    color: white;
+    background-color: rgb(65, 166, 255);
+    padding: 4px;
+    border-radius: 10px;
+    border:1.5px solid black;
+}
+
+#upgradeButton, #autoClickerButton, #multiplyButton {
+    color: black;
+    background-color: #fffbbd;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    bottom: 10px;
+}
+
+#curr {
+    font-size: 0.8em;
+    width: 150px;
+}
+
+
+/*---------------------------------------------------------------------------------------------*/
+
+#h1ab {
+    font-size: 2em;
+    padding-top: 8px;
+    padding-left: 10px;
+    color: #d6c91f;
+    text-shadow: -2px 2px 0 #000000, 2px 2px 0 #000000, 2px -2px 0 #000000, -2px -2px 0 #000000, 0 2px 0 #000000, 0px -2px 0 #000000;
+    text-align: left;
+}
+
+#conp {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+}
+
+#peoplesec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7ffcca3;
+    z-index: 6;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    width: 100%;
+    height: auto;
+  }
+
+.pname {
+    font-size: 0.9em;
+    top: 20px;
+    color: white;
+    background-color: rgb(65, 166, 255);
+    padding: 4px;
+    border-radius: 10px;
+    border:1.5px solid black;
+    margin-bottom: 5px;
+}
+
+.desc {
+    font-size:0.7em;
+}
+
+#imgp {
+    width:100px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+#refsec {
+    display: block;
+    justify-content: left;
+    align-items: left;
+    background-color: #f7ffcca3;
+    z-index: 6;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    width: 100%;
+    height: auto;
+    text-align: left;
+  }
