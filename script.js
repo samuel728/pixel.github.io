@@ -48,17 +48,6 @@ autoClickerButton.addEventListener("click", autoClickerHandler);
 // event listener untuk tombol upgrade
 upgradeButton.addEventListener("click", upgradeHandler);
 
-// event listener untuk keypress event pada document object
-document.addEventListener("keypress", keyPressHandler);
-
-// fungsi yang dipanggil ketika terjadi keypress event pada document object
-function keyPressHandler(event) {
-  // jika tombol yang ditekan adalah spacebar
-  if (event.code === "Space") {
-    clickHandler();
-  }
-}
-
 document.getElementById("closeshop").addEventListener("click", function() {
   document.getElementById("shop").style.display = "none";
   document.getElementById("showshop").style.display = "block";
@@ -151,7 +140,7 @@ function autoClickerHandler() {
       document.getElementById("tamu").innerHTML = "<img src='asset/4p.gif' style='width: 50px;'>";
     }
     if (autoClicker == 5){
-      document.getElementById("upgradetamu").innerHTML = "<img src='asset/3p.gif' style='width: 50px;'>";
+      document.getElementById("upgradetamu").innerHTML = "<img src='asset/5p.gif' style='width: 50px;'>";
       document.getElementById("tamu").innerHTML = "<img src='asset/5p.gif' style='width: 50px;'>";
     }
   } else {
