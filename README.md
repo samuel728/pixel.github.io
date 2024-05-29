@@ -6,7 +6,7 @@ Riyandhi Adrian Darmawan - 00000068383 (about us)
 Samuel Kimin - 00000068078 (html css creator)
 
 Catatan
-- Tugas UTS PTI LAB Tahun 2022-2023 (Kelas B, Dosen = Fenina Adline Twince Tobing)
+- Proyek PTI Tahun 2022-2023
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 Mekanisme Game
